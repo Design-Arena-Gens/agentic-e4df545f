@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Agent Dev • AI-Driven Engineer</title>
+  <meta name="description" content="Cutting-edge developer portfolio leveraging AI systems to deliver high-impact software with speed and precision.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="grid-canvas" aria-hidden="true"></canvas>
+
+  <div class="page">
+    <header class="nav">
+      <div class="nav__brand">
+        <span class="brand__orb" aria-hidden="true"></span>
+        <span class="brand__text">Agent Developer</span>
+      </div>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#stack" class="nav__link">Stack</a>
+        <a href="#projects" class="nav__link">Builds</a>
+        <a href="#workflow" class="nav__link">Workflow</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <button class="nav__button" id="command-trigger" type="button" aria-haspopup="dialog">
+        <span class="nav__button-key">⌘</span>
+        <span class="nav__button-key">K</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__content">
+          <p class="hero__dek">AI-accelerated full-stack engineer</p>
+          <h1 class="hero__title">I prototype, iterate, and ship <span class="title__accent">faster</span> with intelligent tooling.</h1>
+          <p class="hero__copy">
+            From idea to launch in record time. I weave automation, AI copilots, and solid engineering fundamentals into a responsive,
+            measurable workflow that keeps teams ahead of the curve.
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Book a Build Sprint</a>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="panel panel--status">
+            <header class="panel__header">
+              <span>System Pulse</span>
+              <span class="panel__status">Realtime</span>
+            </header>
+            <div class="panel__body">
+              <div class="metric">
+                <span class="metric__label">Δ velocity w/ AI</span>
+                <span class="metric__value gradient-text" data-count="3.2" data-suffix="×">3.2×</span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">Automation coverage</span>
+                <span class="metric__value" data-count="87" data-suffix="%">87%</span>
+              </div>
+              <div class="metric metric--inline">
+                <span class="metric__label">Latency to prototype</span>
+                <span class="metric__value" data-count="48" data-suffix="h">48h</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel--log">
+            <header class="panel__header">
+              <span>Recent Events</span>
+              <button type="button" class="panel__action" id="log-refresh">↻</button>
+            </header>
+            <ul class="log" id="activity-log" aria-live="polite"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="stack" id="stack">
+        <header class="section__header">
+          <h2>Architecture Stack</h2>
+          <p>Modular systems + AI copilots + automation pipelines.</p>
+        </header>
+        <div class="stack__grid">
+          <article class="stack-card">
+            <h3>Full-Stack Web</h3>
+            <p>Next.js, edge-ready APIs, real-time systems. I ship reliable products, instrumented for observability.</p>
+            <ul>
+              <li>TypeScript · React · Node</li>
+              <li>Serverless & edge runtimes</li>
+              <li>Streamlined CI/CD with code AI</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <h3>AI-Augmented Delivery</h3>
+            <p>Chain-of-thought prompting, custom copilots, and agentic flows turbocharging development throughput.</p>
+            <ul>
+              <li>Prompt engineering playbooks</li>
+              <li>Internal tooling for automation</li>
+              <li>Continuous benchmarking</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <h3>Experience Craft</h3>
+            <p>Minimalist, high-impact interfaces with kinetic micro-interactions tuned for performance.</p>
+            <ul>
+              <li>3D & shader experimentation</li>
+              <li>Design systems + tokens</li>
+              <li>Accessibility-first approach</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <header class="section__header">
+          <h2>Recent Builds</h2>
+          <p>Operator + architect across AI-infused products.</p>
+        </header>
+        <div class="projects__grid">
+          <article class="project-card" data-tilt>
+            <div class="project-card__meta">
+              <span class="project-card__label">AI Research Workspace</span>
+              <span class="project-card__year">2024</span>
+            </div>
+            <h3>Neural Ops Console</h3>
+            <p>
+              Unified research hub integrating notebooks, LLM agents, and data streams. Went from spec to launch in under 6 weeks leveraging automated scaffolding and continuous AI QA.
+            </p>
+            <div class="project-card__tags">
+              <span>Next.js</span>
+              <span>LLM Agents</span>
+              <span>Supabase</span>
+            </div>
+          </article>
+          <article class="project-card" data-tilt>
+            <div class="project-card__meta">
+              <span class="project-card__label">Growth Intelligence</span>
+              <span class="project-card__year">2023</span>
+            </div>
+            <h3>Pipeline Autopilot</h3>
+            <p>
+              Autonomous system syncing CRM, inbound signals, and AI prioritization to surface high-intent leads with actionable insights in minutes.
+            </p>
+            <div class="project-card__tags">
+              <span>Remix</span>
+              <span>LangChain</span>
+              <span>GraphQL</span>
+            </div>
+          </article>
+          <article class="project-card" data-tilt>
+            <div class="project-card__meta">
+              <span class="project-card__label">Realtime Infra</span>
+              <span class="project-card__year">2023</span>
+            </div>
+            <h3>Telemetry Mesh</h3>
+            <p>
+              Observability layer with AI-curated dashboards, proactive alerts, and auto-generated remediation scripts wired into incident response.
+            </p>
+            <div class="project-card__tags">
+              <span>Go</span>
+              <span>WebGL</span>
+              <span>Event-Driven</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="workflow" id="workflow">
+        <header class="section__header">
+          <h2>AI Production Workflow</h2>
+          <p>Orchestrated loops that keep teams shipping ahead of schedule.</p>
+        </header>
+        <div class="workflow__grid">
+          <article class="workflow-step">
+            <h3>01 · Diagnose</h3>
+            <p>Shape requirements with constraint mapping and AI-assisted discovery sprints, capturing edge cases upfront.</p>
+          </article>
+          <article class="workflow-step">
+            <h3>02 · Compose</h3>
+            <p>Generate drafts with copilots, then refine with human-in-the-loop reviews. Automated tests ensure every iteration is deployable.</p>
+          </article>
+          <article class="workflow-step">
+            <h3>03 · Simulate</h3>
+            <p>Sandbox with synthetic data, run regression suites, and let AI agents probe for failure modes before shipping.</p>
+          </article>
+          <article class="workflow-step">
+            <h3>04 · Launch & Learn</h3>
+            <p>Deploy with observability baked in. Capture telemetry, feed learnings back into prompts, and close the loop.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div class="cta__card">
+          <h2>Spin Up Your Next Build</h2>
+          <p>
+            Plug into a high-velocity workflow that blends AI craftsmanship with production-grade engineering. Ready to unlock it?
+          </p>
+          <form class="cta__form">
+            <label class="cta__label" for="email">Project inbox</label>
+            <div class="cta__input-group">
+              <input type="email" id="email" name="email" placeholder="you@nextlaunch.dev" required>
+              <button type="submit" class="btn btn--primary">Initiate</button>
+            </div>
+          </form>
+          <div class="cta__footnote">
+            <span data-toggle="availability" class="availability">System Status: <strong>Online</strong></span>
+            <span class="cta__meta">Average response in <strong>&lt;6h</strong></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__primary">
+        <div>
+          <span class="brand__orb brand__orb--footer" aria-hidden="true"></span>
+          <span class="brand__text">Agent Developer</span>
+        </div>
+        <p>Building intelligent systems with measurable impact.</p>
+      </div>
+      <nav class="footer__links" aria-label="Secondary">
+        <a href="https://cal.com" target="_blank" rel="noreferrer">Schedule</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:hello@nextlaunch.dev">Email</a>
+      </nav>
+    </footer>
+  </div>
+
+  <dialog class="command" id="command-dialog">
+    <form method="dialog" class="command__container">
+      <header class="command__header">
+        <input type="search" id="command-input" placeholder="Search capabilities, request a sprint, open docs…" autocomplete="off">
+      </header>
+      <ul class="command__results" id="command-results" role="listbox"></ul>
+      <footer class="command__footer">
+        <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+        <span><kbd>⏎</kbd> open</span>
+        <span><kbd>esc</kbd> close</span>
+      </footer>
+    </form>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
